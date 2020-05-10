@@ -1,0 +1,60 @@
+{
+  "name": "mycooluilib",
+  "version": "0.0.1",
+  "private": false,
+  "main": "build/src/components/index.js",
+  "types": "build/src/components/index.d.ts",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prebuild": "rm -rf build",
+    "build": "yarn tsc -p tsconfig.prod.json",
+    "prestorybook": "rnstl --pattern 'src/**/*.story.tsx'",
+    "storybook": "start-storybook -p 7007"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react-native": "^5.3.18",
+    "@storybook/react-native-server": "^5.3.18",
+    "@types/jest": "^24.0.24",
+    "@types/react-native": "^0.62.0",
+    "@types/react-test-renderer": "16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^2.0.4",
+    "react-dom": "16.11.0",
+    "react-native-storybook-loader": "^1.8.1",
+    "react-native-testing-library": "^1.13.2",
+    "react-test-renderer": "16.11.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
