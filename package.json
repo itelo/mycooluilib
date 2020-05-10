@@ -1,6 +1,6 @@
 {
-  "name": "mycooluilib",
-  "version": "0.0.1",
+  "name": "mycooluilib2",
+  "version": "0.0.2",
   "private": false,
   "main": "build/src/components/index.js",
   "types": "build/src/components/index.d.ts",
